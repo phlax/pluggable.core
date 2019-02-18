@@ -1,0 +1,17 @@
+{"js": {
+    "installs": {
+	"@pluggable/core": "latest"
+    },
+    "app": [
+	"@pluggable/web-app-widgets/plugin",
+	"@pluggable/core/plugin",
+	"@pluggable/oauth/plugin",
+	"@pluggable/gdpr/plugin"
+    ]
+},
+ "worker": {
+     "installs": [
+	 "-e git+ssh://git@git.synca.io:2222/git-server/repos/pluggable.core#egg=pluggable.core"
+     ]
+ }
+}

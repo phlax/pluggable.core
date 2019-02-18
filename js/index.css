@@ -1,0 +1,352 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+}
+
+.http404 {
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    padding: 5em;
+    background: black;
+    color: red;
+}
+
+.http404 img {
+    max-height: 50vh;
+    max-width: 50vw;
+}
+
+
+.navbar {
+    padding: 0;
+    min-height: 3.3em;
+}
+
+.navbar-brand {
+    padding: 0 0 0 .8rem;
+}
+
+.navbar .nav-link .btn {
+    padding: 0
+}
+
+.navbar-collapse {
+    padding: 0 .1rem 0 0;
+}
+
+.nav-item-signup {
+    margin-right: 1em;
+}
+
+.nav-item a {
+    outline: 0;
+}
+
+form .form-group {
+    padding: 0 .3em;
+}
+
+.panel-auth-login-main,
+.panel-auth-signup-main {
+    padding-right: 1.3em;
+}
+
+
+.progress {
+    background-color: #ccc;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.card-img {
+    height: 5em;
+    width: 5em;
+    margin: 1em auto;
+}
+
+.card.centered {
+    text-align:  center;
+}
+
+.clickable-text {
+    padding: 0;
+    border: 0;
+    background: none;
+    text-align: 'left';
+}
+
+
+.blink{
+}
+
+.blink-text {
+    animation: blink 1s linear infinite;
+}
+@keyframes blink{
+    0%{opacity: 0;}
+    50%{opacity: .5;}
+    100%{opacity: 1;}
+}
+
+.window {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80vw;
+    min-height: 80vh;
+    background: #fff;
+    box-shadow: 4px 4px 28px -11px rgba(0,0,0,0.75);
+}
+
+.window .title {
+    background: #ddd;
+    padding: .3em;
+}
+
+.window .title .actions {
+    float: right;
+}
+
+.window .content {
+    padding: .5em;
+}
+
+
+#status {
+    float: left;
+    font-size: 1.3em;
+    padding: .2em;
+    padding-left: .5em;
+}
+
+#app {
+    clear: both;
+    background: #fff;
+    height: 100%;
+}
+
+.icon {
+    height: 1em;
+    width: 1em;
+    vertical-align: middle;
+    margin: 0 .2em;
+}
+
+.icon-big {
+    height: 2em;
+    width: 2em;
+    vertical-align: middle;
+    padding: .2em;
+}
+
+.icon-xl {
+    height: 3em;
+    width: 3em;
+    vertical-align: middle;
+    padding: .3em;
+}
+
+.float-left {
+    float: left;
+    width: 50%;
+}
+
+.padded {
+    padding: 1em
+}
+
+.big {
+    font-size: 1.3em;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.centered {
+    text-align: center;
+}
+
+.twitter-analysis h2 {
+    margin: 0;
+}
+
+.twitter-analysis {
+}
+
+.widget-content {
+    clear: both;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+}
+
+.grid-item {
+    background: red;
+}
+
+.bigger {
+    font-size: 1.5em;
+}
+
+.biggest {
+    font-size: 2em;
+}
+
+button.unstyled {
+    background: none;
+    padding: 0;
+    border: none;
+    font-size: 1em;
+}
+
+button.link {
+    text-decoration: underline;
+    cursor: pointer;
+    color: blue;
+}
+
+.button-big {
+    min-width: 10em;
+    min-height: 10em;
+    background: none;
+    padding: 0;
+    margin: 1em;
+}
+
+.button-big .icon {
+    width: 3em;
+    height: 3em;
+    font-size: 2em;
+}
+
+
+#toolbar {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+#toolbar .toolbar-buttons button {
+    float: right;
+}
+
+
+#content .panel {
+    background: #fafafa;
+    padding: .5em;
+    border: solid #ccc 1px;
+    margin: .5em;
+}
+
+#content .panel h2 {
+    margin-top: 0;
+    margin-bottom: .3em;
+}
+
+#content .panel h3 {
+    margin-top: 0;
+    margin-bottom: .3em;
+}
+
+#content .panel h4 {
+    margin-top: 0;
+    margin-bottom: .3em;
+}
+
+#content .panel h2 {
+    font-size: 1.2em;
+}
+
+#content .panel h3 {
+    font-size: 1.1em;
+}
+
+
+.form {
+    display: grid;
+    grid-template-columns: auto 20em;
+}
+
+.form .panel {
+    padding: 1em;
+}
+
+.form .panel.login, .form .panel.signup {
+    font-size: 2.3em;
+}
+
+.form .panel.login .status, .form .panel.signup .status {
+    height: 1.3em;
+    text-align: center;
+    color: orange;
+}
+
+.form .panel.login .status.failed {
+    color: red;
+}
+
+.form .panel.signup-aside, .form aside.panel {
+    font-size: 2.3em;
+    background: #eee;
+}
+
+.form .panel .field {
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+
+.form .panel .field .name {
+    text-align: right;
+    padding-right: .3em;
+}
+
+
+.form .panel .field .input {
+    padding-left: .3em;
+}
+
+.login-submit {
+    text-align: center;
+    padding: .5em;
+}
+
+.login-submit button {
+    font-size: .8em;
+}
+
+
+.table-thumbnail {
+    height: 3em;
+    width: 3em;
+}
+
+
+#nprogress .bar{
+    background: #859eb5;
+}
+#nprogress .peg {
+    box-shadow:0 0 10px  #859eb5,0 0 5px  #859eb5;
+}
+#nprogress .spinner-icon{
+    border-top-color: #859eb5;
+    border-left-color: #859eb5;
+}
+
+div.console-container {
+    background: #ededc6;
+}

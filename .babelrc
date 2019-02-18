@@ -1,0 +1,28 @@
+{
+  "presets": [
+    ["@babel/env",
+        {"targets": {
+          "node": "current"
+        }
+      }],
+    ["@babel/react"]    
+  ],
+  "plugins": [
+  	  '@babel/plugin-syntax-dynamic-import',
+	  '@babel/plugin-proposal-class-properties',
+	  "@babel/plugin-transform-react-jsx",
+    [
+      "@babel/plugin-proposal-object-rest-spread"
+    ]
+  ],
+  "env": {
+    "test": {
+      "presets": [
+        "env"
+      ],
+      "plugins": [
+            "@babel/plugin-proposal-object-rest-spread"
+      ]
+    }
+  }
+}

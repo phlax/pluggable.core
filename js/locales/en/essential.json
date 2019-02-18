@@ -1,0 +1,39 @@
+{"apps": "Apps",
+ "signin": "Sign in",
+ "signup": "Sign up",
+ "accountNotYet": "Don't have an account yet?",
+ "buttonGoLabel": "Go!",
+ "noAppsInstalled": "No apps installed",
+ "titleWorker": "Worker",
+ "titleApps": "Apps",
+ "titleLogout": "Logout",
+ "titleSettings": "Settings",
+ "titleUser": "User",
+ "titleData": "Data",
+ "selectPlaceholder": "Select...",
+ "buttonCloseAriaLabel": "Close",
+ "tooltipToolbarButtonWorker": "View and manage background worker",
+
+ "altApplications": "Applications",
+ "altData": "Data",
+ "altLogout": "Logout",
+ "altSettings": "Settings",
+ "altWorker": "Worker",
+ "charWindowClose": "×",
+ "linkLabelLogin": "Sign in",
+ "linkLabelSignup": "Sign up",
+
+ "titleColumnImage": "Image",
+ "titleColumnTitle": "Title",
+ "titleColumnRoute": "Route",
+
+ "formTitleLogin": "Sign in",
+ "fieldLabelUsername": "Username",
+ "fieldLabelPassword": "Password",
+
+ "placeholderEnterUsername": "Enter username",
+ "placeholderEnterPassword": "Enter password",
+
+ "titleLoginWithOAuth": "Connectez-vous avec votre compte de média social"
+
+}

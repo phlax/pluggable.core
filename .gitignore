@@ -4,7 +4,6 @@ __pycache__/
 *$py.class
 
 # C extensions
-*.so
 
 # Distribution / packaging
 .Python
@@ -102,3 +101,6 @@ ENV/
 
 *~
 controller.conf
+
+dist
+node_modules
