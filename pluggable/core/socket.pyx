@@ -4,6 +4,7 @@
 
 import aioredis
 import rapidjson as json
+from typing import Union
 
 from .auth.session cimport SessionManager
 from .plugin cimport Plugin
