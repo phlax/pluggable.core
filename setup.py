@@ -16,9 +16,10 @@ extras_require['test'] = [
     "pytest-mock",
     "coverage",
     "cython",
+    "pytest-asyncio",
     "pytest-coverage",
     "codecov",
-    "flake8"],
+    "flake8"]
 
 setup(
     name='pluggable.core',
