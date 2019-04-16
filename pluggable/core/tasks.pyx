@@ -25,6 +25,7 @@ BACKENDS = [
 
 _type = type
 
+
 @task
 async def log(request: JobRequest, type: str, msg: str) -> str:
     request.app.loop.create_task(
@@ -66,7 +67,6 @@ async def social_request(request, **kwargs):
     _backend = backend(strategy, 'http://localhost:3002')
     return await asyncio.get_event_loop().run_in_executor(
         None, do_auth, _backend)
-
 
 
 @task
