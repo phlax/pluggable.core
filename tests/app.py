@@ -6,6 +6,7 @@ import pytest
 
 import uvloop
 
+from aioworker.model import Config
 from aioworker.worker import Worker
 
 from pluggable.core.hooks import Hook
@@ -18,8 +19,12 @@ class _MockWorker(Worker):
     pass
 
 
+class _MockConfig(Config):
+    pass
+
+
 def MockWorker():
-    return _MockWorker("BROKER")
+    return _MockWorker(_MockConfig())
 
 
 def test_app_signature():

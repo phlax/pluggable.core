@@ -49,7 +49,7 @@ async def test_core_session_manager_get(mocker):
     assert manager.app is app
     app.caches.__getitem__.return_value.execute = AsyncMock()
     app.caches.__getitem__.return_value.execute.return_value.decode = (
-        MagicMock(return_value=23))
+        MagicMock(return_value="23"))
     result = await manager.get("UUID")
     cache_dict = app.caches.__getitem__
     assert (
@@ -62,7 +62,7 @@ async def test_core_session_manager_get(mocker):
     assert (
         [c[0] for c in cache_dict.call_args_list]
         == [('session',)])
-    assert result == 23
+    assert result == "23"
 
 
 @pytest.mark.asyncio

@@ -288,12 +288,12 @@ async def test_core_plugin_socket_l10n_worker(mocker):
     app = mocker.MagicMock()
     plugin = CoreSocketPlugin(app)
     app.worker.tasks.__getitem__.return_value.call = AsyncMock(
-        return_value="STORED_L10N")
+        return_value=dict(l10n="STORED_L10N"))
     app.caches.__getitem__.return_value.execute = AsyncMock()
 
     with patch("pluggable.core.socket.json") as json_m:
         response = await plugin._l10n_worker("LANGUAGE", "FILETYPE")
-        assert response == "STORED_L10N"
+        assert response == dict(l10n="STORED_L10N")
         assert (
             [c[0] for c in app.caches.__getitem__.call_args_list]
             == [('l10n',)])
@@ -303,4 +303,4 @@ async def test_core_plugin_socket_l10n_worker(mocker):
             == [('set', 'LANGUAGE.FILETYPE', json_m.dumps.return_value)])
         assert (
             [c[0] for c in json_m.dumps.call_args_list]
-            == [('STORED_L10N',)])
+            == [(dict(l10n='STORED_L10N'),)])
