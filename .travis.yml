@@ -1,0 +1,17 @@
+# https://travis-ci.org/#!/phlax/aioworker
+dist: trusty
+language: python
+python:
+  - "3.5"
+
+install:
+  - pip install cython
+  - pip install -U setuptools pip
+  - pip install -e git+https://github.com/phlax/aioworker#egg=aioworker
+  - pip install -e .
+  - pip install .[test]
+  - python3 setup.py build_ext --inplace
+
+script:
+  - flake8 .
+  - pytest -vv
